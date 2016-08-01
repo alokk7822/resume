@@ -1,0 +1,190 @@
+html {
+  font-size: 11px;
+}
+body {
+
+}
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+  .only-on-print, .only-on-print * {
+    display: inherit !important;
+  }
+}
+.only-on-print {
+  display: none;
+}
+.resume {
+  /*height: 29.7cm;*/
+  width: 21cm;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.resume-body {
+  padding: 2rem;
+}
+header {
+  display: flex;
+  font-weight: 200;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+h2 {
+  font-weight: 200;
+  font-size: 2.5rem;
+  display: flex;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #bfb5b5;
+}
+h2 i {
+  font-size: 2rem;
+  align-self: center;
+  margin-right: 1rem;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.user-info {
+  width: 36rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.user-info .name {
+  font-size: 3.5rem;
+}
+.user-info .work-role {
+  font-size: 1.5rem;
+}
+.user-info .links {
+  display: flex;
+  font-weight: 100;
+  margin-top: 0.7rem;
+  font-size: 1.5rem;
+}
+.user-info .links a, .user-info .links a:visited {
+	color: black;
+	background: transparent;
+  padding: 1rem;
+	text-decoration: none;
+}
+.header-right a, .header-right a:visited {
+	color: black;
+	background: transparent;
+	text-decoration: none;
+}
+.experience > ul {
+  list-style-type: none;
+  padding: 0;
+}
+.experience, .skills, .interests {
+  margin-top: 3rem;
+}
+.experience-item {
+  margin: 2rem 0.6rem;
+  padding: 0 1.8rem;
+  position: relative;
+}
+.experience-item:before {
+  content: "";
+  position: absolute;
+  border-left: 0.15rem solid darkgrey;
+  height: calc(100% + -1rem);
+  left: -0.3rem;
+  top: 2.4rem;
+}
+.experience-item:last-child:before {
+  display: none;
+}
+.experience-title {
+  font-size: 2rem;;
+  padding: 0.3rem 0;
+  font-weight: 300;
+}
+.experience-date {
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+.experience-location {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.experience-place {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.experience-organisation {
+  font-weight: 500;
+}
+.experience-info {
+  line-height: 1.7rem;
+  padding-top: 1rem;
+  font-weight: 300;
+}
+.experience-info ul {
+  list-style-type: initial;
+  padding-left: 3rem;
+}
+.profile-pic > img {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 0.6rem;
+  box-shadow: 0rem 0rem 1.5rem -0.1rem black;
+}
+.resume-body {
+  display: flex;
+}
+.left-panel {
+  padding-right: 2rem;
+  width: 70rem;
+}
+.right-panel table {
+  width: 100%;
+  padding-top: 1rem;
+  font-weight: 300;
+}
+.skill-sets {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.skill-set {
+  margin-bottom: 1rem;
+}
+.skill-set .topic {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+.skill-set .values {
+  margin-top: 0.4rem;
+}
+.about-me .key {
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.summary ul {
+  font-weight: 300;
+  padding-left: 2rem;
+  line-height: 1.5rem;
+}
+.bullet-icon {
+  position: absolute;
+  left: -0.8rem;
+  font-size: 1.8rem;
+  top: -0.1rem;
+}
+.bullet-icon.u-gradCapCorrection {
+  left: -1.3rem;
+  font-size: 1.6rem;
+}
+.bullet-icon.u-childCorrection {
+  left: -0.9rem;
+}
