@@ -67,13 +67,18 @@ h2 i {
   display: flex;
   font-weight: 100;
   margin-top: 0.7rem;
+  position: absolute;
   font-size: 1.5rem;
+  top: 8.5rem;
 }
 .user-info .links a, .user-info .links a:visited {
 	color: black;
 	background: transparent;
   padding: 1rem;
 	text-decoration: none;
+}
+.user-info .links a:hover {
+  font-size: 2rem;
 }
 .header-right a, .header-right a:visited {
 	color: black;
@@ -123,10 +128,16 @@ h2 i {
 .experience-organisation {
   font-weight: 500;
 }
+.experience-item:hover .experience-info {
+    max-height: 13rem;
+}
 .experience-info {
   line-height: 1.7rem;
   padding-top: 1rem;
+  max-height: 0;
   font-weight: 300;
+  overflow: hidden;
+  transition: max-height 0.65s;
 }
 .experience-info ul {
   list-style-type: initial;
