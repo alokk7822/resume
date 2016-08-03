@@ -1,8 +1,12 @@
 html {
-  font-size: 11px;
+  font-size: 13px;
 }
 body {
-
+  /*color: white;
+  background: black;*/
+}
+a:hover {
+  cursor: pointer;
 }
 @media print {
   .no-print, .no-print * {
@@ -24,6 +28,10 @@ body {
 .resume-body {
   padding: 2rem;
 }
+.resume-top {
+  display: flex;
+  justify-content: space-between;
+}
 header {
   display: flex;
   font-weight: 200;
@@ -32,7 +40,7 @@ header {
 }
 h2 {
   font-weight: 200;
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: flex;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -47,7 +55,12 @@ h2 i {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  padding-right: 7.2rem;
+  margin-top: 0.7rem;
+}
+.header-right td:first-child {
+    text-align: center;
 }
 .user-info {
   width: 36rem;
@@ -58,18 +71,18 @@ h2 i {
   justify-content: center;
 }
 .user-info .name {
-  font-size: 3.5rem;
+  font-size: 2.7rem;
 }
 .user-info .work-role {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .user-info .links {
   display: flex;
   font-weight: 100;
   margin-top: 0.7rem;
   position: absolute;
-  font-size: 1.5rem;
-  top: 8.5rem;
+  font-size: 1.3rem;
+  top: 7rem;
 }
 .user-info .links a, .user-info .links a:visited {
 	color: black;
@@ -85,17 +98,29 @@ h2 i {
 	background: transparent;
 	text-decoration: none;
 }
+section {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
 .experience > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
-.experience, .skills, .interests {
-  margin-top: 3rem;
+.experience > ul, .about-me > div, .skills > div, .interests > div {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.summary > ul, .experience > ul, .about-me > div, .skills > div, .interests > div {
+  margin-top: 2rem;
 }
 .experience-item {
-  margin: 2rem 0.6rem;
+  margin: 2rem 0.6rem 0rem 0.6rem;
   padding: 0 1.8rem;
   position: relative;
+}
+.experience-item:first-child {
+  margin-top: 0;
 }
 .experience-item:before {
   content: "";
@@ -109,35 +134,30 @@ h2 i {
   display: none;
 }
 .experience-title {
-  font-size: 2rem;;
+  font-size: 1.7rem;
   padding: 0.3rem 0;
   font-weight: 300;
 }
 .experience-date {
   font-weight: 200;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .experience-location {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 200;
 }
 .experience-place {
-  font-size: 1.5rem;
   text-transform: uppercase;
 }
 .experience-organisation {
+  font-size: 1.2rem;
   font-weight: 500;
-}
-.experience-item:hover .experience-info {
-    max-height: 13rem;
 }
 .experience-info {
   line-height: 1.7rem;
   padding-top: 1rem;
-  max-height: 0;
+  /*max-height: 0;*/
   font-weight: 300;
-  overflow: hidden;
-  transition: max-height 0.65s;
 }
 .experience-info ul {
   list-style-type: initial;
@@ -150,38 +170,48 @@ h2 i {
   box-shadow: 0rem 0rem 1.5rem -0.1rem black;
 }
 .resume-body {
-  display: flex;
+  /*display: flex;*/
 }
 .left-panel {
-  padding-right: 2rem;
-  width: 70rem;
+  /*padding-right: 2rem;*/
+  /*width: 70rem;*/
 }
 .right-panel table {
-  width: 100%;
+  /*width: 100%;*/
   padding-top: 1rem;
   font-weight: 300;
 }
 .skill-sets {
-  margin-top: 1.5rem;
   font-size: 1rem;
   font-weight: 300;
 }
 .skill-set {
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 .skill-set .topic {
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 200;
 }
 .skill-set .values {
   margin-top: 0.4rem;
+  margin-left: 1rem;
 }
 .about-me .key {
   text-transform: uppercase;
   font-weight: 200;
 }
+.about-me > div {
+  line-height: 1rem;
+}
+.summary {
+  /*width: 41rem;*/
+}
+.about-me {
+  width: 35rem;
+}
 .summary ul {
+  margin-left: 0;
   font-weight: 300;
   padding-left: 2rem;
   line-height: 1.5rem;
