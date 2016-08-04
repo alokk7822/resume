@@ -3,7 +3,7 @@ html {
 }
 @media (max-width: 1024px) {
   html {
-    font-size: 15px;
+    font-size: 30px;
   }
 }
 body {
@@ -76,8 +76,8 @@ h2 i {
     text-align: center;
 }
 .user-info {
-  flex: 1;
-  min-width: 52rem;
+  flex: 2;
+  min-width: 23rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,8 +221,8 @@ h2 i {
   line-height: 1rem;
 }
 .summary, .experience {
-  flex: 1;
-  min-width: 46rem;
+  flex: 1 46rem;
+  min-width: 22rem;
 }
 .about-me, .resume-side {
   flex: 1;
