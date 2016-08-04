@@ -74,10 +74,12 @@ h2 i {
 .user-info .links {
   display: flex;
   font-weight: 100;
-  margin-top: 0.7rem;
   position: absolute;
   font-size: 1.3rem;
   top: 7rem;
+  justify-content: center;
+  margin: auto;
+  margin-top: 0.7rem;
 }
 .user-info .links a, .user-info .links a:visited {
 	color: black;
