@@ -79,7 +79,7 @@ h2 i {
   top: 7rem;
   justify-content: center;
   margin: auto;
-  margin-top: 0.7rem;
+  margin-top: 1.5rem;
 }
 .user-info .links a, .user-info .links a:visited {
 	color: black;
@@ -232,6 +232,13 @@ h2 i {
   left: -0.9rem;
 }
 @media print {
+  html {
+    font-size: 8.5px;
+  }
+  .resume {
+    margin: 0;
+    max-width: 100%;
+  }
   .no-print, .no-print * {
     display: none !important;
   }
@@ -239,7 +246,7 @@ h2 i {
     display: inherit !important;
   }
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   html {
     font-size: 30px;
   }
