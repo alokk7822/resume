@@ -1,3 +1,3 @@
 # résumé
 
-This is where I host the code for my résumé webpage - [addnab.com/resume](http://addnab.com/resume/)
+This is where I host the code for my résumé webpage - [ankursinha.net/profile](https://ankursinha.net/profile)
